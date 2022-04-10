@@ -3,7 +3,19 @@ This work is based on Apache Spark, please configure spark enviroment using appr
 
 To run statitical analysis using FastBGT (e.g, N subjects, 9 risk patterns: 0.02, 1-mix, 2-mix, 3-mix, 4-mix, 0.05, 0.1, 0.15, 0.2, each with 4 tree schemes), Please launch applications through bgtf_start_statistical_analysis.sh following the example below:
 
-```./bgtf_start_statistical_analysis.sh <N> <Risk Pattern> <Tree Schemes>```
+```./bgtf_start_statistical_analysis.sh <OP X> <N> <Risk Pattern> <Tree Schemes>```
+
+For ```<OP X>```
+
+1: Baseline
+
+2: OP1
+
+3: OP2
+
+4: OP3
+
+5: OP4
 
 For ```<Risk Pattern>```
 
@@ -35,7 +47,7 @@ For ```<Tree Schemes>```
 
 4 : Hybrid tree with Cross Pruning
 
-The simulation will generate a set of statistical and performance evaluation summary, named by ```<N>-<Risk-Pattern>-<Test Selection Rule>-<MM-DD-YYYY HH-MM-SS>.csv```, indicating which pool setting is used for the set of statistical analysis with an attached time stamp.
+The simulation will generate a set of statistical and performance evaluation summary, named by ```<N>-<Risk-Pattern>-<Test Selection Rule>.csv```, indicating which pool setting is used for the set of statistical analysis.
 
 
 
@@ -44,4 +56,4 @@ To run BHA using FastBGT (e.g ```N``` subjects with 9 prior risk patterns). Plea
 ```./bgtf_start_BHA.sh <N>```
 
 
-The simulation will generate a set of statistical and performance evaluation summary, named by ```LatticeBenchmark-N=<N>-<MM-DD-YYYY HH-MM-SS>.csv```, indicating which ```N``` is used for the set of simulaitons with an attached time stamp.
+The experiment will generate a set of performance evaluation summary for BHA, named by ```LatticeBenchmark-<OP X>-<N>.csv```, indicating which ```Optimization``` and ```N``` is used for the set of experiment.
