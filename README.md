@@ -1,4 +1,4 @@
-# FastBGT_AD
+# FastBGT-AD
 This work is based on Apache Spark, please configure spark enviroment using appropriate Spark configuration files for your own settings. Note: For ```N <= 20```, please assign at least 32g memory for the driver and each executor by doing ```--driver-memory 32g``` and ```--executor-memory 32g``` For ```N >= 20```, please consider assigning all available memories for driver and executor. Ex. ```N=30``` requires at least 128g memory.
 
 To run statitical analysis using FastBGT (e.g, using ```<OP X>``` and ```N``` subjects, 9 prior risk patterns: 0.02, 1-mix, 2-mix, 3-mix, 4-mix, 0.05, 0.1, 0.15, 0.2, each with 4 tree schemes), Please launch applications through FastBGT_start_statistical_analysis.sh following the example below:
